@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 600px;
+    height: auto;
+    margin: 10%;
+}
+
+.content {
+    display: inline-block;
+    min-height: 600px;
+}
+
+.content .left {
+    float: left;
+    width: 399px;
+    height: 600px;
+}
+
+.content .right {
+    float: right;
+    width: 199px;
+    height: 600px;
+}
+
+.container .content a {
+    text-decoration: none;
+    color: darkolivegreen;
+}
+
+.container .content a:hover {
+    color: purple;
+}

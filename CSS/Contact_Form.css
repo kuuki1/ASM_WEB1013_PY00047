@@ -1,0 +1,34 @@
+label{
+    font-variant: small-caps;
+    font-weight: bold;
+    height: 30px;
+    color: darkblue;
+}
+
+input{
+    height: 20px;
+}
+
+.dangky{
+    max-width: 700px;
+    padding: 10px;
+    margin: 0;
+}
+
+.dangky>h3, .dangky>h4{
+    color: blue;
+    text-align: center;
+    height: 30px;
+}
+
+button{
+    border: 1px solid black;
+    font-size: 15px;
+    border-radius: 10px;
+    color:white;
+    background-color:navy;
+}
+
+.DoDai {
+    width: 460px;
+}

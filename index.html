@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Trang thông tin trường THPT số 1 Phù Cát
+        </title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/styleMenu.css">
+        <link rel="stylesheet" href="CSS/imgshow.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header" >
+                <!-- <img src="../IMG/Hinh1.jpg" alt=""> -->
+            </div>
+            <div class="nav">
+                <a href="" id="logo">
+                    <img src="IMG/Hinh1-logo-removebg-preview.png" alt="THPT số 1 Phù Cát">
+                </a>
+                <ul id="mainMenu">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="HTML/GioiThieu.html" target="page">Giới thiệu</a>
+                        <ul class="menu_con">
+                            <li><a href="HTML/DoanThe.html" target="page">Đoàn thể</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="HTML/HoatDong.html" target="page">Hoạt động</a>
+                        <ul class="menu_con">
+                            <li><a href="HTML/CongDoan.html" target="page">Công đoàn</a></li>
+                            <li><a href="HTML/HocSinh.html" target="page">Cựu học sinh</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="HTML/HocTap.html" target="page">Học tập</a>
+                    </li>
+                    <li><a href="HTML/LienHe.html" target="page">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div>
+                <marquee behavior="" direction="left" id="marquee">Chào mừng đến với trang thông tin trường THPT số 1 Phù Cát nơi các bạn tha hồ quậy phá á nhầm tỏa sáng :></marquee>
+            </div>
+            <div class="slide_show">
+                <div class="list_img" style="max-width: 1000px;">
+                    <img class="mySlides" src="IMG/tc1.jpg" width="100%">
+                    <img class="mySlides" src="IMG/tc2.jpg" width="100%">
+                    <img class="mySlides" src="IMG/tc3.jpg" width="100%">
+                    <img class="mySlides" src="IMG/tc4.jpg" width="100%">
+                    <img class="mySlides" src="IMG/tc5.jpg" width="100%">
+                    <img class="mySlides" src="IMG/tc6.jpg" width="100%">
+                </div>
+                <script>
+                    var myIndex = 0;
+                    carousel();
+                    
+                    function carousel() {
+                      var i;
+                      var x = document.getElementsByClassName("mySlides");
+                      for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+                      }
+                      myIndex++;
+                      if (myIndex > x.length) {myIndex = 1}    
+                      x[myIndex-1].style.display = "block";  
+                      setTimeout(carousel, 4000); // Change image every 4 seconds
+                    }
+                    </script>
+            </div>
+            <div class="content">
+                <div class="article">
+                    <iframe name="page" src="HTML/TrangChu.html" scrolling="auto" frameborder="0"></iframe>
+                </div>
+                <div class="aside">
+                    <div class="lichLV">
+                        <img src="IMG/lich_lam_viec.jpg" alt="" class="widthR">
+                        <ul>
+                            <li><a href="HTML/week30.html" target="page">Lịch làm việc tuần 30</a></li>
+                            <li><a href="HTML/week31.html" target="page">Lịch làm việc tuần 31</a></li>
+                            <li><a href="HTML/week32.html" target="page">Lịch làm việc tuần 32</a></li>
+                            <li><a href="HTML/week33.html" target="page">Lịch làm việc tuần 33</a></li>
+                            <li><a href="HTML/week34.html" target="page">Lịch làm việc tuần 34</a></li>
+                            <li><a href="HTML/week35.html" target="page">Lịch làm việc tuần 35</a></li>
+                            <li><a href="HTML/week36.html" target="page">Lịch làm việc tuần 36</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                &copy; Trường THPT số 1 Phù Cát
+            </div>
+        </div>
+    </body>
+</html>
